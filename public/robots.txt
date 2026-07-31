@@ -8,4 +8,4 @@ Disallow: /contact/tada
 
 # ~~The completely empty sitemap~~
 # The sitemap
-Sitemap: https://fgclue.nl/sitemap-index.xml
+Sitemap: https://fgclue.org/sitemap-index.xml
