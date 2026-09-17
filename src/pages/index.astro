@@ -28,11 +28,19 @@ import Link from "../components/Link.astro";
       </div>
       <div>
         <h1 class="text-2xl">Clue</h1>
-        <p>Hey! It's me! Just a guy with some <Link href="/blog">blog posts</Link>, some <Link href="https://github.com/fgclue">projects</Link> and some <Link href="https://biitle.nl">web</Link><Link href="/">sites</Link></p>
+        <p>
+          Hey! It's me! Just a guy with some <Link href="/blog">blog posts</Link
+          >, some <Link href="https://github.com/fgclue">projects</Link> and some
+          <Link href="https://biitle.nl">web</Link><Link href="/">sites</Link>
+        </p>
         <p class="text-gray-900 text-sm">Timezone: GMT-3 · Brasília Time</p>
         <p class="text-gray-900 text-sm">Phone: Who still uses phones??</p>
-        <p class="text-gray-900 text-sm">Electronic mail: Click on Contact above</p>
-        <p class="text-gray-900 text-sm" id="favorite-thing">Favorite superlative: best</p>
+        <p class="text-gray-900 text-sm">
+          Electronic mail: Click on Contact above
+        </p>
+        <p class="text-gray-900 text-sm" id="favorite-thing">
+          Favorite superlative: best
+        </p>
       </div>
       <script defer>
         items = [
@@ -41,7 +49,7 @@ import Link from "../components/Link.astro";
           "Favorite programming language: Kotlin",
           "Favorite image file format: WEBP",
           "Favorite top level domain: .org",
-          "Size of my .gradle folder: 7.1G",
+          "Size of my .gradle folder: 4.8G",
           "Favorite filesystem: btrfs",
           "Favorite monospace font: Comic Code Ligatures",
           "Favorite sans-serif font: Inter",
@@ -54,11 +62,12 @@ import Link from "../components/Link.astro";
           "Favorite bodging program: AutoHotKey",
           "Favorite element: 119 Ununennium",
           "Favorite Unicode Character: ︘ PRESENTATION FORM FOR VERTICAL RIGHT WHITE LENTICULAR BRAKCET",
-          "CPU Brand: AMD",
+          "Favorite CPU brand: AMD",
           "Favorite code contest: IOCCC",
-          "Installed GNOME extensions: 15"
-        ]
-        document.getElementById("favorite-thing").textContent = items[items.length - 1 - Math.floor(Math.random() * items.length)]
+          "Installed GNOME extensions: 18",
+        ];
+        document.getElementById("favorite-thing").textContent =
+          items[items.length - 1 - Math.floor(Math.random() * items.length)];
       </script>
     </div>
 
@@ -67,28 +76,54 @@ import Link from "../components/Link.astro";
     <div>
       <h1 class="text-2xl">Skills</h1>
       <p>
-        I am familiar with <Tag text="Kotlin" />, <Tag text="Python" />, <Tag text="Rust" /> and also <Tag text="TypeScript" />. I am also trying to learn how to use <Tag text="C" /> and my <Link href="https://youtu.be/cFtymODJEjs">favorite interpreted langauge</Link>, <Tag text="C++" />.
+        I am familiar with <Tag
+          text="Kotlin"
+          hover="Modern statically typed language developed by JetBrains, commonly used for Android development"
+        />, <Tag
+          text="Python"
+          hover="High-level programming language known for its simple syntax and extensive ecosystem of libraries"
+        />, <Tag text="Rust" hover="Compiled systems programming language focused on performance, memory safety, and concurrency" /> and also <Tag
+          text="TypeScript"
+          hover="JavaScript with static types and additional language features"
+        />. I am also trying to learn how to use <Tag
+          text="C"
+          hover="Low-level compiled language commonly used for operating systems, embedded systems, and performance-critical software"
+        /> and my <Link href="https://youtu.be/cFtymODJEjs"
+          >favorite interpreted langauge</Link
+        >, <Tag text="C++" hover="Compiled programming language extending C with features such as classes, templates, and generic programming" />.
       </p>
       <p>
-        Also, I am familiar with tools such as <Tag text="Git" />, <Tag text="Docker" /> and <Tag text="Figma" />
+        Also, I am familiar with tools such as <Tag text="Git" hover="Distributed version control system used to track changes and collaborate on software projects" />, <Tag
+          text="Docker" hover="Platform for packaging applications and their dependencies into isolated containers"
+        /> and <Tag text="Figma" hover="Collaborative tool for designing user interfaces, graphics, and interactive prototypes" /> 
+      </p>
+      <p class="text-gray-900 text-sm" id="favorite-thing">
+        (hover over any technology for a description)
       </p>
     </div>
 
     <div>
       <h1 class="text-2xl">Projects</h1>
       <ProjectBar>
-        Projects: 
-        <Tag text="ppddvv" />
-        <LinkedTag text="Podnative" url="https://biitle.nl/apps/podnative/" />
-        <LinkedTag text="Lightswitch for Toggl" url="https://biitle.nl/apps/lightswitch/" />
+        Projects:
+        <Tag text="ppddvv" hover="Simple point-of-sale system with a focus on intuitiveness" />
+        <LinkedTag text="Podnative" url="https://biitle.nl/apps/podnative/" hover="WearOS podcast player " />
+        <LinkedTag
+          text="Lightswitch for Toggl"
+          url="https://biitle.nl/apps/lightswitch/"
+          hover="WearOS client for the popular time tracking app Toggl Track"
+        />
       </ProjectBar>
       <ProjectBar>
-        Experiments: 
-        <LinkedTag text="Crossaint" url="https://github.com/fgclue2/Crossaint/" />
+        Experiments:
+        <LinkedTag
+          text="Crossaint"
+          url="https://github.com/fgclue2/Crossaint/"
+        />
         <LinkedTag text="xkcd.sh" url="https://github.com/fgclue2/xkcd.sh/" />
       </ProjectBar>
       <ProjectBar>
-        Open source: 
+        Open source:
         <LinkedTag text="Espresso" url="https://github.com/fgclue/Espresso/" />
       </ProjectBar>
       <ProjectBar>
@@ -101,6 +136,9 @@ import Link from "../components/Link.astro";
         <InactiveTag text="Outclock" year="2026" />
         <InactiveTag text="Jot" year="2026" />
       </ProjectBar>
+      <p class="text-gray-900 text-sm" id="favorite-thing">
+        (hover over any project for a description)
+      </p>
     </div>
   </main>
   <Footer />
