@@ -1,10 +1,11 @@
 ---
-const { text, year } = Astro.props;
+const { text, year, hover = "" } = Astro.props;
 ---
 
 <span
   class="inline-flex items-center gap-0.5 border px-2 text-center bg-red-50 border-red-100 rounded-sm text-sm h-5.5"
->
+  title={hover}
+  >
   {text}
   <span class="text-xs text-gray-800">{year}</span>
 </span>

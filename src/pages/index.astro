@@ -82,7 +82,10 @@ import Link from "../components/Link.astro";
         />, <Tag
           text="Python"
           hover="High-level programming language known for its simple syntax and extensive ecosystem of libraries"
-        />, <Tag text="Rust" hover="Compiled systems programming language focused on performance, memory safety, and concurrency" /> and also <Tag
+        />, <Tag
+          text="Rust"
+          hover="Compiled systems programming language focused on performance, memory safety, and concurrency"
+        /> and also <Tag
           text="TypeScript"
           hover="JavaScript with static types and additional language features"
         />. I am also trying to learn how to use <Tag
@@ -90,12 +93,22 @@ import Link from "../components/Link.astro";
           hover="Low-level compiled language commonly used for operating systems, embedded systems, and performance-critical software"
         /> and my <Link href="https://youtu.be/cFtymODJEjs"
           >favorite interpreted langauge</Link
-        >, <Tag text="C++" hover="Compiled programming language extending C with features such as classes, templates, and generic programming" />.
+        >, <Tag
+          text="C++"
+          hover="Compiled programming language extending C with features such as classes, templates, and generic programming"
+        />.
       </p>
       <p>
-        Also, I am familiar with tools such as <Tag text="Git" hover="Distributed version control system used to track changes and collaborate on software projects" />, <Tag
-          text="Docker" hover="Platform for packaging applications and their dependencies into isolated containers"
-        /> and <Tag text="Figma" hover="Collaborative tool for designing user interfaces, graphics, and interactive prototypes" /> 
+        Also, I am familiar with tools such as <Tag
+          text="Git"
+          hover="Distributed version control system used to track changes and collaborate on software projects"
+        />, <Tag
+          text="Docker"
+          hover="Platform for packaging applications and their dependencies into isolated containers"
+        /> and <Tag
+          text="Figma"
+          hover="Collaborative tool for designing user interfaces, graphics, and interactive prototypes"
+        />
       </p>
       <p class="text-gray-900 text-sm" id="favorite-thing">
         (hover over any technology for a description)
@@ -106,8 +119,15 @@ import Link from "../components/Link.astro";
       <h1 class="text-2xl">Projects</h1>
       <ProjectBar>
         Projects:
-        <Tag text="ppddvv" hover="Simple point-of-sale system with a focus on intuitiveness" />
-        <LinkedTag text="Podnative" url="https://biitle.nl/apps/podnative/" hover="WearOS podcast player " />
+        <Tag
+          text="ppddvv"
+          hover="Simple point-of-sale system with a focus on intuitiveness"
+        />
+        <LinkedTag
+          text="Podnative"
+          url="https://biitle.nl/apps/podnative/"
+          hover="Simple WearOS podcast player"
+        />
         <LinkedTag
           text="Lightswitch for Toggl"
           url="https://biitle.nl/apps/lightswitch/"
@@ -119,22 +139,28 @@ import Link from "../components/Link.astro";
         <LinkedTag
           text="Crossaint"
           url="https://github.com/fgclue2/Crossaint/"
+          hover="Cross-platform sent in python"
         />
-        <LinkedTag text="xkcd.sh" url="https://github.com/fgclue2/xkcd.sh/" />
+        <LinkedTag
+          text="xkcd.sh"
+          url="https://github.com/fgclue2/xkcd.sh/"
+          hover="Terminal xkcd viewer"
+        />
       </ProjectBar>
       <ProjectBar>
         Open source:
-        <LinkedTag text="Espresso" url="https://github.com/fgclue/Espresso/" />
+        <LinkedTag text="Espresso" url="https://github.com/fgclue/Espresso/" hover="Simple point-of-sale system server" />
       </ProjectBar>
       <ProjectBar>
         Side-projects:
-        <LinkedTag text="Storekit" url="https://github.com/fgclue/storekit/" />
+        <LinkedTag text="Storekit" url="https://github.com/fgclue/storekit/" 
+        hover="Distro-agnostic package management library"/>
       </ProjectBar>
       <ProjectBar>
         Inactive:
-        <InactiveTag text="FluidServer" year="2025-2026" />
-        <InactiveTag text="Outclock" year="2026" />
-        <InactiveTag text="Jot" year="2026" />
+        <InactiveTag text="FluidServer" year="2025-2026" hover="Point-of-sale system server" />
+        <InactiveTag text="Outclock" year="2026" hover="Simple time tracking app"/>
+        <InactiveTag text="Jot" year="2026" hover="Text editor for writers to focus"/>
       </ProjectBar>
       <p class="text-gray-900 text-sm" id="favorite-thing">
         (hover over any project for a description)
